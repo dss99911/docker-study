@@ -121,6 +121,7 @@ docker cp <containerId>:/file/path/within/container /host/path/target
 ```
 
 ### 도커 로그 확인하기
+- -f follow (show logs continuously)
 ```shell
-docker logs 2fe24b9564b5
+docker logs -f 2fe24b9564b5
 ```
