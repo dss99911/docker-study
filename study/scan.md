@@ -4,6 +4,7 @@
 
 
 ### Scan
+- Docker Hub provide Vulnerability Scanning(but, it's pro version)
 
 ```shell
 docker scan {image-name}
