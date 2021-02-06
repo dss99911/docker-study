@@ -50,7 +50,7 @@ docker rm -f `docker ps -a -q`
 - -v : volume (path matching) : https://docs.docker.com/storage/volumes/
 - -d : daemon (백그라운드에서 실행. 재부팅시에는 재실행 안됨)
 - -i : interactive
-
+- -e : environment `-e AA=BB`
 ```
 docker run -p 8080:80 -v /home/ec2-user/example:/var/www/html example
 ```
@@ -118,4 +118,9 @@ docker run -d --restart unless-stopped -p 8090:8080 --name zeppelin apache/zeppe
 ### 컨테이너에 있는 파일을 외부로 복사하는 방법
 ```
 docker cp <containerId>:/file/path/within/container /host/path/target
+```
+
+### 도커 로그 확인하기
+```shell
+docker logs 2fe24b9564b5
 ```
