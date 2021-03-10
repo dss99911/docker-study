@@ -26,7 +26,7 @@ docker-compose up -d
 ```
 
 ## Remove Compose
-```shelld
+```shell
 docker-compose down
 
 #To stop and delete containers, delete volumes with database data and download images
