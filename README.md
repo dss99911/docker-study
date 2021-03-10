@@ -38,3 +38,6 @@ docker run -dp 3000:3000 \
   - manage cluster. and delegate work to worker node
   - [ ] [Security related blog post](https://diogomonica.com/2017/03/27/why-you-shouldnt-use-env-variables-for-secret-data/)
   - [ ] Kubernetes, Swarm, Nomad, and ECS
+  
+# Troubleshooting
+- [error](study/error.md)
