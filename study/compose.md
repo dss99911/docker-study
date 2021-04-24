@@ -2,6 +2,7 @@
 - [ ] [Docker Compose](https://docs.docker.com/compose/)
 
 - Compose는 multi container 를 하나의 network안에 설정할 때 쓴다.
+- container를 실행시킬 때 필요한 여러 설정값을 정의해서, 실행시 그냥 실행 시키면 됨
 
 ## Install
 [Install Docker Compose](https://docs.docker.com/compose/install/)
@@ -32,6 +33,13 @@ docker-compose down
 #To stop and delete containers, delete volumes with database data and download images
 docker-compose down --volumes --rmi all
 
+```
+
+## Run on container
+- run command on `web` container
+- after building web container, run the command.
+```shell
+sudo docker-compose run web django-admin startproject composeexample .
 ```
 
 
