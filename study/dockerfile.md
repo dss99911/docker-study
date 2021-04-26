@@ -1,3 +1,34 @@
+# Dockerfile
+
+## Reference
+- [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
+- [CMD vs ENTRYPOINT](https://phoenixnap.com/kb/docker-cmd-vs-entrypoint)
+
+## Command
+
+### CMD
+- 컨테이너 실행할 때, 호출하는 명령어.
+  - 다른 명령어들은 모두 build시에 수행하는 명령어지만, 이건, runtime에 수행함.
+- CMD는 docker run할 때, overrides될 수 있음
+  - `sudo docker run [container_name] [command]` 로 실행하면, CMD는 호출되지 않고, [command]가 수행
+### ENTRYPOINT
+- CMD와 거의 유사함
+- run할 때, overrides되냐 안되냐의 차이
+- 실행할 코드는 ENTRYPOINT로 정의하고, 디폴트 argument는 CMD로 정의하는 걸 추천
+
+#### Dockerfile
+```dockerfile
+ENTRYPOINT ["echo", "Hello"]
+CMD ["World"]
+```
+#### run
+```shell
+sudo docker run [container_name] Docker
+```
+#### result
+```log
+Hello Docker
+```
 
 ## Simple Build
 ```

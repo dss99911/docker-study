@@ -20,6 +20,12 @@ docker pull ndb796/docker-practice
 docker run -p 8080:8080 --rm --name zeppelin apache/zeppelin:0.9.0
 ```
 
+#### 이미지 실행명령어와 다른 명령어 호출하기
+- CMD의 명령어를 호출하는 대신에 Command를 호출함.
+```shell
+sudo docker run [image_name] [Command]
+```
+
 ### 설치된 이미지들 보기
 ```
 docker images

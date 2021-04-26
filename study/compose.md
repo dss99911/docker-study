@@ -20,6 +20,14 @@
 
 - if no mountpoint is defined, then the default options are used.
 
+## Build compose
+```shell
+docker-compose build
+#different file name
+docker-compose -f docker-compose-deploy.yml up --build
+```
+
+
 ## Start Compose
 - -d detached
 ```shell
