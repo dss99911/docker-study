@@ -16,7 +16,7 @@ services:
     environment:
       MYSQL_HOST: mysql
       MYSQL_USER: root
-      MYSQL_PASSWORD: secret
+      MYSQL_PASSWORD: "${PASSWORD}"
       MYSQL_DB: todos
     build:
       context: .
