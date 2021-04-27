@@ -14,6 +14,7 @@
 ### push repository
 - 이미지를 dockerhub에 푸시
 - tag명령어로 local의 tag(이미지 이름)과 리모트의 계정의 tag와 맵핑시키는 듯
+- AWS ECR등 dockerhub가 아닌 다른 repo로 푸시 가능함
 ![img4](img/docker-repository4.png)
 
 ### check repositories here

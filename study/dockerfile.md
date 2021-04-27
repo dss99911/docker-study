@@ -30,6 +30,22 @@ sudo docker run [container_name] Docker
 Hello Docker
 ```
 
+### RUN
+- Run multiple line
+```dockerfile
+RUN set -ex \
+    && apt-get update \
+    && echo "something"
+```
+
+### EXPOSE
+https://docs.docker.com/engine/reference/builder/#expose
+```dockerfile
+EXPOSE 80/tcp
+EXPOSE 80/udp
+EXPOSE 8080 5555 8888
+```
+
 ## Simple Build
 ```
 FROM node:12-alpine
