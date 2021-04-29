@@ -1,6 +1,10 @@
 ## Doc
 - [ ] [Docker Compose](https://docs.docker.com/compose/)
 
+
+## Compose를 쓰는 방식
+- 서버에 여러 서비스가 있는데, 도커 없이는 매번 여러 프로그램을 설치하고, 연계하고, 설정해주고, 해야 하는데, (가능한 한) 모든 서비스는 docker image로 실행시키고, 각 서비스들과의 소통은 compose를 통해서 처리
+    - 예) nginx에서 jupyter notebook으로 bypass하기
 - Compose는 multi container 를 하나의 network안에 설정할 때 쓴다.
 - container를 실행시킬 때 필요한 여러 설정값을 정의해서, 실행시 그냥 실행 시키면 됨
 
