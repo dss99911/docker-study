@@ -39,6 +39,9 @@ docker rmi -f <image id> # find id from `docker images`
 
 ### 실행 중인 컨테이너 확인
 ```
+docker ps
+
+# 꺼져있는 것도 표시
 docker ps -a
 ```
 
