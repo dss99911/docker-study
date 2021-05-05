@@ -57,6 +57,9 @@ docker rm -f `docker ps -a -q`
 ### Run. 실행 시키기
 - -p : 포트 매칭
 - -v : volume (path matching) : https://docs.docker.com/storage/volumes/
+  - :ro : read-only. container can't modify the volumn. only read the volumn in the host
+  - image의 해당 디렉토리에 파일이 있으면, 해당 디텍토리는 host의 디텍토리로 덮어씌워져서, 파일이 사라진다.
+  - 디렉토리가 아닌, 파일을 설정할 수도 있음. 이 경우, host에 파일이 이미 존재해야함.
 - -d : daemon (백그라운드에서 실행. 재부팅시에는 재실행 안됨)
 - -i : interactive
 - -e : environment `-e AA=BB`
