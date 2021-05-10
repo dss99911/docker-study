@@ -15,5 +15,8 @@ sudo docker run -d \
 #  -p 80:80 \
 #  -v /home/ec2-user/static:/usr/share/nginx/html:ro \
 #  -v /home/ec2-user/nginx:/etc/nginx/conf.d:ro \
-#  -v /home/ec2-user/nginx.conf:/etc/nginx/nginx.conf:ro \
 #  nginx
+
+## if want to modify nginx.conf, copy nginx.conf file from image. and modify it.
+## TODO run nginx -> copy nginx.conf to host server. remove container -> run nginx again.
+##  -v /home/ec2-user/nginx.conf:/etc/nginx/nginx.conf:ro \
