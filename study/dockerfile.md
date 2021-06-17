@@ -38,6 +38,12 @@ RUN set -ex \
     && echo "something"
 ```
 
+### ENV
+- define environment path
+```dockerfile
+ENV PYTHONPATH=/app
+```
+
 ### EXPOSE
 https://docs.docker.com/engine/reference/builder/#expose
 ```dockerfile
