@@ -7,7 +7,14 @@
 
 ## Summary
 - Remote Docker hosts에 접속해서, 배포, 실행 등의 docker 명령어를 수행
-- 이것 없이는, 서버에서, image를 다운 받아서, 실행시켜야 하는데, 이걸로 하면, image를 dockerhub나 개인 repository에 안 올리고, 알아서, 이미지를 서버에 올려서 실행시켜줄 듯?
+- outdated 된 듯. http://docs.docker.oeynet.com/machine/get-started-cloud/
+
+
+## Install
+- Mac
+```
+brew install docker-machine
+```
 
 ## Command
 
