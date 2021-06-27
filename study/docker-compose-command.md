@@ -47,3 +47,13 @@ volumes:
 - AWS ECR ex : image: 123455667.dkr.ecr.ap-south-1.amazonaws.com/sample/airflow1:latest
 
 ### Logging
+
+
+### restart
+- on-failure
+- unless-stopped
+
+
+### build
+- args
+    - 여기에 정의를 하면, Dockerfile에서 environment argument처럼 $KEY 와 같이 사용 할 수 있음.

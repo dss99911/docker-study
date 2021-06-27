@@ -7,6 +7,7 @@
     - 예) nginx에서 jupyter notebook으로 bypass하기
 - Compose는 multi container 를 하나의 network안에 설정할 때 쓴다.
 - container를 실행시킬 때 필요한 여러 설정값을 정의해서, 실행시 그냥 실행 시키면 됨
+- image 신규 버전을 pull하기 위해서도 쓰는 듯
 
 ## Install
 [Install Docker Compose](https://docs.docker.com/compose/install/)

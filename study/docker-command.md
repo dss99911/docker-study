@@ -137,3 +137,9 @@ docker cp <containerId>:/file/path/within/container /host/path/target
 ```shell
 docker logs -f 2fe24b9564b5
 ```
+
+### 텍스트로 컨테이너 ID 찾기
+```shell
+ID=$(docker ps | grep "app-name" |tr -s ' ' | cut -d " " -f 1)
+
+```
