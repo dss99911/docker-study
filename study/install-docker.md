@@ -1,5 +1,7 @@
 # Install Docker
 
+## Install on Windows
+https://docs.docker.com/desktop/windows/install/
 
 ## Install on AWS EC2
 

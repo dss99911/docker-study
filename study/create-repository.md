@@ -23,3 +23,7 @@
 
 ### check repositories here
 [repositories](https://hub.docker.com/repositories)
+
+
+### docker repository 없이 파일로 image사용하기
+https://stackoverflow.com/questions/24482822/how-to-share-my-docker-image-without-using-the-docker-hub

@@ -2,6 +2,7 @@ https://www.youtube.com/watch?v=odmG6RJQboE&list=PLRx0vPvlEmdChjc6N3JnLaX-Gihh5p
 
 ### 이미지 빌드하기
 - 현재 path의 Dockerfile을 빌드함
+- 동일한 이름의 이미지가 이미 존재하면, 기존의 이미지의 태그는 <none>으로 설정되고, 빌드한 이미지는 lastest로 설정됨
 - -t : tag (이미지 이름)
 ```
 docker build -t example .
@@ -117,6 +118,12 @@ docker inspect <container-id>
 - https://www.youtube.com/watch?v=gmE_8oSZ-mo&list=PLRx0vPvlEmdChjc6N3JnLaX-Gihh5pHcx&index=5
 - 배쉬 접속해서 mysql 접속하는 방법
   ![dd](img/connect-bash.jpg)
+
+### 이미지의 파일 확인하기
+```shell
+docker run -it image_name sh
+```
+
 
 
 ### Restart Policy
