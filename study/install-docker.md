@@ -19,3 +19,6 @@ sudo yum install docker -y
 ```shell
 sudo service docker start
 ```
+
+# docker without sudo
+https://docs.docker.com/engine/install/linux-postinstall/
