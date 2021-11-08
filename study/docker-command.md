@@ -75,7 +75,7 @@ docker run -p 8080:80 -v /home/ec2-user/example:/var/www/html example
 ```
 docker volume create todo-db
 
-docker run -dp 3000:3000 -v todo-db:/etc/todos getting-started
+docker run -dp 3000:3000 -v todo-db:/etc/todos -v todo-db3:/etc/todos3 getting-started getting-started
 
 docker volume inspect todo-db # you can see where the path of the volume
 [
