@@ -8,6 +8,15 @@ https://www.youtube.com/watch?v=odmG6RJQboE&list=PLRx0vPvlEmdChjc6N3JnLaX-Gihh5p
 docker build -t example .
 ```
 
+### 이미지 푸시
+- tag : version 등 설정
+```shell
+docker build -t $USERNAME/$IMAGE:latest .
+docker tag $USERNAME/$IMAGE:latest $USERNAME/$IMAGE:"$version"
+docker push $USERNAME/$IMAGE:latest
+docker push $USERNAME/$IMAGE:"$version"
+```
+
 ### 이미지 다운로드 받기
 ```
 docker pull ndb796/docker-practice
@@ -17,6 +26,7 @@ docker pull ndb796/docker-practice
 - 이미지가 remote repo에 있는 경우에도 run으로 실행시켜도 됨(이 경우, 이미지를 다운 받고, 실행 시킴.)
 - -p : port
 - -d : detached (background에서 실행)
+- --rm : clean up. 컨테이너 실행 후, 종료 후에도 기본적으로 컨테이너가 유지되는데, 컨테이너를 삭제함
 ```
 docker run -p 8080:8080 --rm --name zeppelin apache/zeppelin:0.9.0
 ```
