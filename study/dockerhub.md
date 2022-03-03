@@ -12,3 +12,9 @@ private repository를 사용하기 위해선 로그인 해야함.
 docker login
 
 ```
+
+#### login to ECR
+https://docs.aws.amazon.com/ko_kr/AmazonECR/latest/userguide/getting-started-cli.html
+```
+aws ecr get-login-password --region {region} | docker login --username AWS --password-stdin {aws_account_id}.dkr.ecr.{region}.amazonaws.com
+```
