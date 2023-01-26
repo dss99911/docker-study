@@ -112,7 +112,16 @@ docker inspect <container-id>
 ```
 
 ### 컨테이너 내부에 접속하는 방법
-- docker exec -it <container-id> /bin/bash
+interactive
+````shell
+docker exec -it <container-id> /bin/bash
+````
+non-interactive
+```shell
+docker exec container-name tail /var/log/date.log
+```
+
+- 
 - mysql처럼 ip로 접속 가능한 경우 -> gateway ip address로
 - port맵핑을 통해 실행한 경우, 맵핑된 port로도 접속 가능
 - https://www.youtube.com/watch?v=gmE_8oSZ-mo&list=PLRx0vPvlEmdChjc6N3JnLaX-Gihh5pHcx&index=5
